@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Keepcalm</title>
+    <link rel="stylesheet" href="css/colors.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700" rel="stylesheet"
+          type="text/css">
+    <link rel="icon" type="image/x-icon" href="'favicon.ico'"/>
+</head>
+<body>
+    
+    <section id="main-section">
+        <header>
+            <div class="logo_container">
+                <h1 id="logo"><a href="/"><span>Keepcalm</span>.com</a></h1>
+            </div>
+        </header>
+        <div class="container">
+           
+                <p class="home_msg">TEXTE FINAL</p>
+            
+             <div class="kc-container">
+        <div class="kc-content dispo-flex">
+            <div class="kc-conf">
+                <form action="" method="post">
+                    <div class="item-kc-conf">
+                        <div class="conf-top dispo-flex">
+                            <div class="">
+                                <a href="#" id="choose-icon">
+                                    <img src="images/icones-configurator/crown-kcc.png" alt="jdjdj">
+                                    <br>
+                                    Icone
+                                </a>
+                            </div>
+                            <div class="">
+                                <label for="icon-color">
+                                    <img src="images/icones-configurator/colours.png" alt=""><br>
+                                    couleur de l'icone
+                                    <input type="color" id="icon-color" value="#FFFFFF" name="fontcolor" size="5"
+                                           data-options="fontColor">
+                                </label>
+                            </div>
+                            <div class="">
+                                <a href="#" id="choose-bg-image">
+                                    <img src="images/icones-configurator/flag.png" alt=""><br>
+                                    Image
+                                </a>
+                            </div>
+                            <div class="">
+                                <label for="change-bg-color">
+                                    <img src="images/icones-configurator/colours.png" alt=""><br>
+                                    couleur de l'image
+                                    <input type="color" id="change-bg-color" class="" value="#FFFFFF"
+                                           name="text2-color" size="5">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-kc dispo-flex">
+                        <input type="text" name="text1" id="text1" class="text-control" value="Keep"
+                               data-text="text1">
+                        <label for="text1-color">
+                            <input type="color" id="text1-color" class="text-color" value="#FFFFFF"
+                                   name="text1-color" size="5" data-text="text1">
+                        </label>
+                        <button class="text-size" data-text="text1" data-size="moyen">Moyen</button>
+                    </div>
+                    <div class="item-kc dispo-flex">
+                        <input type="text" name="text2" id="text2" class="text-control" value="Calm"
+                               data-text="text2">
+                        <label for="text2-color">
+                            <input type="color" id="text2-color" class="text-color" value="#FFFFFF"
+                                   name="text2-color" size="5" data-text="text2">
+                        </label>
+                        <button class="text-size" data-text="text2" data-size="large">Large</button>
+                    </div>
+                    <div class="item-kc dispo-flex">
+                        <input type="text" name="text3" id="text3" class="text-control" value="And"
+                               data-text="text3">
+                        <label for="text3-color">
+                            <input type="color" id="text3-color" class="text-color" value="#FFFFFF"
+                                   name="text3-color" size="5" data-text="text3">
+                        </label>
+                        <button class="text-size" data-text="text3" data-size="moyen">Moyen</button>
+                    </div>
+                    <div class="item-kc dispo-flex">
+                        <input type="text" name="text1" id="text4" class="text-control" value="Carry"
+                               data-text="text4">
+                        <label for="text4-color">
+                            <input type="color" id="text4-color" class="text-color" value="#FFFFFF"
+                                   name="text4-color" size="5" data-text="text4">
+                        </label>
+                        <button class="text-size" data-text="text4" data-size="large">Large</button>
+                    </div>
+                    <div class="item-kc dispo-flex">
+                        <input type="text" name="text5" id="text5" class="text-control" value="On"
+                               data-text="text5">
+                        <label for="text5-color">
+                            <input type="color" id="text5-color" class="text-color" value="#FFFFFF"
+                                   name="text5-color" size="5" data-text="text5">
+                        </label>
+                        <button class="text-size" data-text="text5" data-size="moyen">Moyen</button>
+                    </div>
+                    <div class="item-kc">
+                        <button id="kc-generate">Générer l'image</button>
+                    </div>
+                </form>
+            </div>
+            <div class="kc-poster-container">
+                <div class="kc-poster-content">
+                    <canvas id="kc-canvas" width="260" height="380"></canvas>
+                </div>
+                <div class="kc-download-link-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="kc-images-container close">
+        <div class="kc-images-content dispo-flex flex-wrap"></div>
+    </div>
+        </div>
+        
+    </section>
+
+    <footer id="main-footer">
+    <div class="container">
+        <div class="row dispo-flex flex-wrap">
+            <div class="footer_widget">
+                <div class="widget_content">
+                    <h3 class="footer_widget_title">Sur ce site</h3>
+                    <ul id="top-dup-feedback">
+                        <li>
+                            <a href="#" class="dup-feedback-trigger">Suggérez à un ami</a>
+                            <div id="suggest-container"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="dup-feedback-trigger">Signalez un problème</a>
+                            <div id="report-container"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="dup-feedback-trigger">Contactez-nous</a>
+                            <div id="contact-container"></div>
+                        </li>
+                        <li><a id="addFavoris" href="#" rel="sidebar">Ajoutez aux favoris</a></li>
+                        <li><a href="/sitemap.xml">Plan du site</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+   
+        <div class="copyright">
+            <p>Coprith</p>
+        </div>
+    
+</footer>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/addFavoris.js"></script>
+    <script type="text/javascript" src="js/keepcalm.js"></script>
+   
+</body>
+</html>

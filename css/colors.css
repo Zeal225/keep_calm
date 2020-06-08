@@ -1,0 +1,69 @@
+body {
+    background: rgb(138, 85, 120);
+}
+
+#main-section {
+    background: -webkit-linear-gradient(bottom, rgb(92, 55, 92) 0%, rgb(48, 155, 143) 100%);
+}
+
+.logo_container h1 a,
+footer a {
+    color: rgb(138, 85, 120);
+}
+
+.kc-content .kc-poster-container .kc-poster-content{
+    background: #fff;
+}
+
+.conf-top a,
+.conf-top label,
+.kc-images-content{
+    background: linear-gradient(180deg, #fca, #ccc);
+    color: #000;
+}
+
+.kc-content .kc-poster-container .kc-download-link-container a{
+    background: #d00;
+    color: #fff;
+}
+
+.kc-content .kc-poster-container .kc-download-link-container a:hover{
+    background: #f00;
+}
+
+.couverture-dial {
+    background: rgba(0, 0, 0, .3);
+}
+
+body,
+.dup-feedback-form-container input:not(.submit-alt),
+.dup-feedback-form-container textarea,
+footer a{
+    color: rgb(255, 255, 255);
+}
+
+.copy-done,
+.dup-feedback-form-container,
+.couverture-dial .dial-container{
+    background: rgb(46, 145, 135) !important;
+}
+
+.dup-feedback-form-container:after {
+    background: inherit !important;
+    border: 0 !important;
+}
+
+.dup-feedback-form-container input:not(.submit-alt)::-webkit-input-placeholder,
+.dup-feedback-form-container textarea::-webkit-input-placeholder,
+.dup-feedback-form-container input:not(.submit-alt)::placeholder,
+.dup-feedback-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.dup-btn {
+    color: rgba(47, 144, 134,1) !important;
+}
+.dup-btn:hover {
+    color: rgba(255, 255, 255,1) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
